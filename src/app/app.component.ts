@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { ItemListComponent } from './item-list/item-list.component';
+import { RouterModule, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.scss'],
+  imports: [ItemListComponent,RouterModule, 
+    RouterOutlet ],
 })
-export class AppComponent {
-  title = 'angular-api-list';
-}
+export class AppComponent {}

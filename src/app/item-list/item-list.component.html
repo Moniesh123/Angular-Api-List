@@ -1,0 +1,20 @@
+<div class="container mt-4">
+    <h1 class="mb-4">Items List</h1>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Body</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let element of dataSource">
+                <td>{{element.id}}</td>
+                <td>{{element.title}}</td>
+                <td>{{element.body}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
